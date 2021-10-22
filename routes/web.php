@@ -22,6 +22,10 @@ Route::get('/test', function () {
     return view('test');
 });
 
+Route::get('/updated-on-git', function () {
+    return view('test');
+});
+
 Route::get('/contact', [
     App\Http\Controllers\ContactController::class, 'showContactForm'
 ]);
