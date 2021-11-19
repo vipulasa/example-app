@@ -71,3 +71,7 @@ Route::get('/updated-on-git', function () {
 Route::get('/contact', [
     App\Http\Controllers\ContactController::class, 'showContactForm'
 ]);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
